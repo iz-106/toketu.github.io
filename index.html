@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokiwa Tomitsuka Profile</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Noto Sans JP for Japanese and Montserrat for English -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .english-font {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header Section: Hero Banner -->
+    <header class="h-screen flex items-center justify-center hero-gradient px-6">
+        <div class="text-center">
+            <span class="english-font text-indigo-600 font-semibold tracking-widest text-sm uppercase mb-4 block">Official Profile</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-2">冨塚 常葉</h1>
+            <p class="text-xl md:text-2xl text-gray-600 font-light">Tokiwa Tomitsuka</p>
+            
+            <div class="mt-12">
+                <a href="#details" class="inline-block bg-gray-900 text-white px-10 py-4 rounded-full text-sm font-medium hover:bg-gray-700 transition shadow-lg">
+                    詳細を見る
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Section: Cards for Short Name and Special Person -->
+    <section id="details" class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Card for Nickname (ED) -->
+            <div class="p-10 border border-gray-100 rounded-3xl bg-gray-50 card-hover">
+                <h2 class="text-sm font-bold text-indigo-500 uppercase tracking-wider mb-6">略称</h2>
+                <div class="flex items-baseline space-x-2">
+                    <span class="english-font text-6xl font-bold text-gray-900">ED</span>
+                </div>
+                <p class="mt-4 text-gray-500 text-sm leading-relaxed">
+                    私の略称・愛称です。
+                </p>
+            </div>
+
+            <!-- Card for Special Person (高野 真奈) -->
+            <div class="p-10 border border-gray-100 rounded-3xl bg-gray-50 card-hover">
+                <h2 class="text-sm font-bold text-pink-500 uppercase tracking-wider mb-6">好きな人</h2>
+                <div class="text-3xl font-bold text-gray-900">
+                    高野 真奈
+                </div>
+                <p class="mt-4 text-gray-500 text-sm leading-relaxed">
+                    私にとって大切な、大好きな人です。
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-12 text-center border-t border-gray-100">
+        <p class="text-gray-400 text-xs tracking-widest uppercase">
+            &copy; 2024 Tokiwa Tomitsuka. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
